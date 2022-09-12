@@ -59,7 +59,7 @@ option = st.selectbox(
 # Wordcloud with positive tweets
 for date in dates:
     temp_df = pd.read_csv(f'./data/{date}.csv')
-    temp_df = temp_df[temp_df['text'].lower().find(candidates[0]) != -1]
+    temp_df = temp_df[temp_df.apply(lower().find(candidates[0])) != -1]
     positive_tweets = temp_df['text'][temp_df["sentiment"] == option]
     stop_words = ["https", "co", "RT"] + list(STOPWORDS)
     positive_wordcloud = WordCloud(max_font_size=50, max_words=50, background_color="white", stopwords = stop_words).generate(str(positive_tweets))

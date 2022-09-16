@@ -11,7 +11,7 @@ import matplotlib.pyplot as plt
 
 st.title('Rachel Sentiment Analysis')
 
-dates = ['09_06', '09_07']
+dates = ['09_06', '09_07', '09_13']
 
 
 candidates = ['rachel']

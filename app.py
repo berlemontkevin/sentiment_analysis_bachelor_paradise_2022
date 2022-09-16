@@ -6,7 +6,7 @@ import plotly.express as px
 
 st.title('Homepage of the Sentiment Analysis of the Bachelorette 2022')
 
-dates = ['09_06', '09_07']
+dates = ['09_06', '09_07', '09_13']
 
 candidates = ['tino', 'erich', 'aven','rachel', 'gabby', 'johnny', 'jason', 'zach']
 
